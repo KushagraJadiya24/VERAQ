@@ -63,3 +63,35 @@
 # python3 -m venv venv
 # venv\Scripts\activate
 #import requests
+
+
+# #json
+# import json
+
+# movie = {"title": "Inception", "year": 2010, "genres": ["Sci-Fi", "Thriller"]}
+
+# string= json.dumps(movie,indent=2);
+# print(string)
+# print(type(string))
+
+# json_string = '{"name": "Aditya", "age": 20}'
+# person = json.loads(json_string)
+
+# print(person["name"])     # Aditya
+# print(type(person))       # <class 'dict'> — back to a real dict
+
+
+# http requests 
+
+# import requests
+
+# def get_random_joke():
+#     url = "https://official-joke-api.appspot.com/random_joke"
+#     try:
+#         response = requests.get(url, timeout=5)
+#         data = response.json()
+#         return data
+#     except Exception as e:
+#         return f"Request failed: {e}"
+
+# print(get_random_joke())
