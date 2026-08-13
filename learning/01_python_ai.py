@@ -95,3 +95,84 @@
 #         return f"Request failed: {e}"
 
 # print(get_random_joke())
+
+#  Given prices = {"apple": 50, "banana": 20, "milk": 40, "bread": 35}, print items costing more than 30.
+prices = {"apple": 50, "banana": 20, "milk": 40, "bread": 35}
+# for item,price in prices.items():
+#     if price> 30:
+#         print(item)
+
+# approach 2
+# result = {item: price for item, price in prices.items() if price > 30}
+# print(result)
+# # Given prices from above, find the most expensive item (key and value) without using max() directly on values — loop through it.
+# maxPrice=0
+# fitem = price.get[]
+# for item,price in prices.items():
+#     if price>maxPrice:
+#         maxPrice = price
+#         fitem = item
+# print(item,maxPrice)
+
+# Given two dicts, dict1 = {"a": 1, "b": 2} and dict2 = {"b": 3, "c": 4}, merge them into one dict. If a key exists in both, keep dict2's value.
+# dict2 = {"b": 3, "c": 4}
+# dict1 = {"a": 1, "b": 2}
+
+# merged = {**dict1,**dict2}
+# print(merged)
+
+
+# Given:
+# python
+# employees = [
+#     {"name": "Aditya", "dept": "Engineering", "salary": 55000},
+#     {"name": "Riya", "dept": "Marketing", "salary": 48000},
+#     {"name": "Karan", "dept": "Engineering", "salary": 60000},
+#     {"name": "Neha", "dept": "Sales", "salary": 42000},
+# ]
+
+# Print only employees in "Engineering", and separately, calculate the average salary across everyone.
+
+employees = [
+    {"name": "Aditya", "dept": "Engineering", "salary": 55000},
+    {"name": "Riya", "dept": "Marketing", "salary": 48000},
+    {"name": "Karan", "dept": "Engineering", "salary": 60000},
+    {"name": "Neha", "dept": "Sales", "salary": 42000},
+]
+
+# sum=0
+# count=0
+# for items in employees:
+#     if items.get("dept") == "Engineering":
+#         print(items)
+#     sum = sum + items.get("salary")
+#     count+=1
+
+# print(sum/count)
+
+# From the same employees list, build a new dictionary that groups names by department, like:
+# python
+# {"Engineering": ["Aditya", "Karan"], "Marketing": ["Riya"], "Sales": ["Neha"]}
+# result = {}
+
+# for engineer in employees:
+#     dept = engineer["dept"]
+#     name = engineer["name"]
+
+#     if dept not in result:
+#         result[dept] = []
+
+#     result[dept].append(name)
+
+# print(result)
+
+#Reverse a List without . reverse()
+
+# nums = [1, 2, 3, 4, 5]
+
+# result = []
+
+# for i in range(len(nums) - 1, -1, -1):
+#     result.append(nums[i])
+
+# print(result)
