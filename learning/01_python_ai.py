@@ -57,4 +57,9 @@
 # except Exception as e:
 #     print("Something went wrong:", e)
 
+# Venv — why it matters
 
+# Every Python project can need different versions of different packages. A virtual environment (venv) creates an isolated, project-specific space so installing packages for one project doesn't mess up another.
+# python3 -m venv venv
+# venv\Scripts\activate
+#import requests
