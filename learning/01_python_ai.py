@@ -97,7 +97,7 @@
 # print(get_random_joke())
 
 #  Given prices = {"apple": 50, "banana": 20, "milk": 40, "bread": 35}, print items costing more than 30.
-prices = {"apple": 50, "banana": 20, "milk": 40, "bread": 35}
+# prices = {"apple": 50, "banana": 20, "milk": 40, "bread": 35}
 # for item,price in prices.items():
 #     if price> 30:
 #         print(item)
@@ -133,12 +133,12 @@ prices = {"apple": 50, "banana": 20, "milk": 40, "bread": 35}
 
 # Print only employees in "Engineering", and separately, calculate the average salary across everyone.
 
-employees = [
-    {"name": "Aditya", "dept": "Engineering", "salary": 55000},
-    {"name": "Riya", "dept": "Marketing", "salary": 48000},
-    {"name": "Karan", "dept": "Engineering", "salary": 60000},
-    {"name": "Neha", "dept": "Sales", "salary": 42000},
-]
+# employees = [
+#     {"name": "Aditya", "dept": "Engineering", "salary": 55000},
+#     {"name": "Riya", "dept": "Marketing", "salary": 48000},
+#     {"name": "Karan", "dept": "Engineering", "salary": 60000},
+#     {"name": "Neha", "dept": "Sales", "salary": 42000},
+# ]
 
 # sum=0
 # count=0
