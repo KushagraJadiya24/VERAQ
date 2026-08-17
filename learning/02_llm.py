@@ -19,5 +19,5 @@ def ask_llm(prompt):
         return f"Request failed: {e}"
 
 if __name__ == "__main__":
-        answer = ask_llm("hi, how are you")
+        answer = ask_llm("explain machine learning")
         print(answer)
