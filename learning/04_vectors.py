@@ -1,5 +1,5 @@
 import os 
-import numpy as py
+import numpy as np
 from dotenv import load_dotenv
 from google import genai
 
@@ -12,15 +12,42 @@ documents = [
 ]
 
 load_dotenv()
-client = genai.client(api_key=os.getenv("GEMINI_API_KEY"))
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 #Iterate and Embed each document and store in a list
 #ask a question and compare the cosine similarity
 # retrieve the top value
-
-def embed(str):
-    response = client.models.embed_content= (
+vectors =[]
+def embed(text):
+    response = client.models.embed_content (
             model="gemini-embedding-001",
             contents=text
         )
+    return response.embeddings[0].values
 
+
+question = "What is a common pet?"
+q = embed(question)
+
+def compare(vec1,vec2):
+    vec1 = np.array(vec1)
+    vec2=np.array(vec2)
+
+    dot_product = np.dot(vec1,vec2)
+    magnitude1 = np.linalg.norm(vec1)
+    magnitude2 = np.linalg.norm(vec2)
+    
+    return dot_product / (magnitude1 * magnitude2)
+
+vals = []
+best_score=0
+
+for str in documents:
+    print(str)
+    vals.append(compare(q,embed(str)))
+    if vals[len(vals)-1]>best_score:
+        best_score = vals[len(vals)-1]
+        best_val = str
+    print(vals[len(vals)-1])
+
+print("Most Relavant is: ", best_val,best_score)
