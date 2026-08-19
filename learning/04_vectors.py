@@ -18,3 +18,9 @@ client = genai.client(api_key=os.getenv("GEMINI_API_KEY"))
 #ask a question and compare the cosine similarity
 # retrieve the top value
 
+def embed(str):
+    response = client.models.embed_content= (
+            model="gemini-embedding-001",
+            contents=text
+        )
+
