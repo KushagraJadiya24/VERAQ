@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Kushagra",
+    "age": 20,
+    "skills": ["Python", "Java", "SQL"],
+    "projects": [
+      {
+        "name": "PathPilotX",
+        "status": "development"
+      }
+    ]
+  },
+  {
+    "name": "Sunny",
+    "age": 21,
+    "skills": ["Python", "React", "MongoDB"],
+    "projects": [
+      {
+        "name": "AyurVeda.ai",
+        "status": "development"
+      }
+    ]
+  }
+]
