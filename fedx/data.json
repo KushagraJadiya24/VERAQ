@@ -1,24 +1,36 @@
 [
-  {
-    "name": "Kushagra",
-    "age": 20,
-    "skills": ["Python", "Java", "SQL"],
-    "projects": [
-      {
-        "name": "PathPilotX",
-        "status": "development"
-      }
-    ]
-  },
-  {
-    "name": "Sunny",
-    "age": 21,
-    "skills": ["Python", "React", "MongoDB"],
-    "projects": [
-      {
-        "name": "AyurVeda.ai",
-        "status": "development"
-      }
-    ]
-  }
+    {
+        "name": "Kushagra",
+        "age": 20,
+        "skills": [
+            "Python",
+            "Java",
+            "SQL"
+        ],
+        "projects": [
+            {
+                "name": "PathPilotX",
+                "status": "Completed"
+            },
+            {
+                "name": "fedsentry",
+                "status": "Development"
+            }
+        ]
+    },
+    {
+        "name": "Sunny",
+        "age": 21,
+        "skills": [
+            "Python",
+            "React",
+            "MongoDB"
+        ],
+        "projects": [
+            {
+                "name": "AyurVeda.ai",
+                "status": "development"
+            }
+        ]
+    }
 ]
